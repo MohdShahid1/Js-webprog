@@ -32,4 +32,11 @@ stories.addEventListener('click',function (dets) {
     full_sc.style.display="block"
     full_sc.style.backgroundImage = `url(${arr[dets.target.id].story})`
     
+    
+    setTimeout(function () {
+        full_sc.style.display="none"
+        
+        
+        
+    }, 3000);
 })

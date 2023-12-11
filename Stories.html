@@ -12,12 +12,62 @@
             width: 100vw;
             background-color: pink;
         }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
         
-        .card{
-            width: 450px;
-            height:350px;
-            background-color: red;
+        #card{
+            width: 19rem;
+            height:25rem;
+            background-color: white;
             border: 2px solid black;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            
+        }
+        
+        #stories{
+            height: 6rem;
+            border-bottom: 2px solid red;
+            white-space: nowrap;
+            overflow-x: auto;
+            overflow-y: hidden;
+            
+            
+        }
+
+        #stories::-webkit-scrollbar{
+            display: none;
+        }
+        .storyin{
+            height:5rem;
+            width: 5rem;
+            border-radius: 50%;
+            /* background-color: blue; */
+            border: 2px solid red;
+            margin: 0.5rem 0rem 1rem 1rem;
+            overflow: hidden;
+            display: inline-block;
+        }
+        .storyin img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        #full_sc{
+            width: 100%;
+            height:100%;
+            position: absolute;
+            display: none;
+            background-position: center;
+            background-size: cover;
         }
 
 
@@ -26,11 +76,16 @@
 <body>
     <div class="container">
         <div id="card">
-            <div id="stories">
+            <div id="full_sc">
 
+            </div>
+            <div id="stories">
+                
+                
             </div>
         </div>
     </div>
+    <script src="Stories.js"></script>
     
 </body>
 </html>
