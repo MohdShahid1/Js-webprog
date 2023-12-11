@@ -1,9 +1,10 @@
 html,body{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: violet;
 }
 
@@ -21,12 +22,7 @@ html,body{
     flex-direction: column;
     align-items: center;
 }
-#panel h1{
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
 
-}
 #panel img{
     width: 230px;
     height: 200px;
@@ -36,12 +32,13 @@ html,body{
 }
 
 button{
-    margin-top: 20px;
+    margin-top: 24px;
     padding: 10px 15px;
     border-radius: 10px;
     color: white;
     background-color: rgb(26, 164, 250);
     border: none;
+    margin-left: 30px;
 }
 
 #icon i{
@@ -52,7 +49,7 @@ button{
     opacity: 0;
     color: white;
     transition: transfrom ease 0.5s;
-
+    
 }
 
 #iconfam{
@@ -62,15 +59,66 @@ button{
     align-items: flex-start;
 }
 
-#icon_2{
-    width: 100px;
-    height: 200px;
+#icon_2 {
+    width: 35px; /* Adjust the width as needed */
+    height: 85px; /* Adjust the height as needed */
+    /* margin-top: 30px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #icon_2 i {
-    width: 50%; 
-    height: 50%;
-    background-color: red;
-    transform: scale(2);
+    font-size: 2.5em;
+    color: green;
+    
+    background-color: white;
+    border-radius: 100%;
+    padding: 0px;
+}
 
+/* .ri-heart-fill{
+    border: 1px solid black;
+} */
+
+.cursor{
+    width: 20px;
+    height:20px;
+    border-radius: 50%;
+    background-color: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    
+}
+
+.elem{
+    width: 100%;
+    height:7rem;
+    background-color: black;
+    border-bottom: 2px solid red;
+    border-top: 2px solid red;
+    display: flex;
+    color: white;
+    
+}
+
+footer{
+    width: 100%;
+    height: 100%;
+}
+
+.elem img {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    opacity: 0;
+    position: absolute;
+    mix-blend-mode: difference;
+}
+
+
+/* stories */
+
+#card{
+    background-color: bisque;
 }
